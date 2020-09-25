@@ -131,13 +131,15 @@ section.banner .img-banner img {
     border: 5px solid rgba(123, 131, 139, 0.3);
     border-radius: 50%;
 
+    -webkit-transition: all 1s;
     transition: all 1s;
 }
 
 section.banner .img-banner img:hover {
     width: 270px;
     border: 5px solid rgba(189, 93, 56, 0.9);
-
+    
+    -webkit-transition: all 1s;
     transition: all 1s;
 }
 
@@ -156,11 +158,13 @@ section.banner .text-banner h1 {
     text-transform: uppercase;
     font-family: 'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
 
+    -webkit-transition: all 1s;
     transition: all 1s;
 }
 
 section.banner .text-banner h1:hover {
     font-size: 4rem;
+    -webkit-transition: all 1s;
     transition: all 1s;
 }
 
@@ -175,11 +179,13 @@ section.banner .text-banner h3 {
     text-transform: uppercase;
     font-family: 'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
     margin-bottom: 50px;
+    -webkit-transition: all 1s;
     transition: all 1s;
 }
 
 section.banner .text-banner h3:hover {
     font-size: 2.5rem;
+    -webkit-transition: all 1s;
     transition: all 1s;
 }
 
@@ -196,6 +202,7 @@ section.banner .text-banner a:hover {
     border: 2px solid #BD5D38;
     color: #BD5D38;
 
+    -webkit-transition: all 1s;
     transition: all 1s;
 }
 
@@ -290,11 +297,15 @@ section.portfolio .projetos .projeto {
     margin: 10px;
     width: 100%;
     max-width: 300px;
+
+    -webkit-transition: all 1s;
     transition: all 1s;
 }
 
 section.portfolio .projetos .projeto:hover {
     max-width: 400px;
+
+    -webkit-transition: all 1s;
     transition: all 1s;
 }
 
@@ -310,11 +321,15 @@ section.portfolio .projetos .projeto a img{
     width: 100%;
     max-width: 300px;
     border-radius: 10px 10px 0 0;
+
+    -webkit-transition: all 1s;
     transition: all 1s;
 }
 
 section.portfolio .projetos .projeto a img:hover {
     max-width: 400px;
+
+    -webkit-transition: all 1s;
     transition: all 1s;
 }
 
