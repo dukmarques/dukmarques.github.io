@@ -23,10 +23,11 @@ a {
     text-decoration: none;
     margin: 0;
     padding: 0;
+    cursor: pointer;
 }
 
 .container {
-    width: 75%;
+    width: 90%;
     max-width: 1100px;
     margin: 0 auto;
 }
@@ -243,4 +244,97 @@ section .conteudo-about p {
 
 section .conteudo-about hr {
     width: 500px;
+}
+
+/*Portfolio*/
+
+section.portfolio {
+    background-color: #FFF;
+}
+
+section.portfolio .portfolio-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section.portfolio .portfolio-text h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin: 20px;
+    font-weight: 700;
+}
+
+section.portfolio .portfolio-text p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+section.portfolio .portfolio-text hr {
+    width: 500px;
+    border: 1px solid #BD5D38;
+}
+
+section.portfolio .projetos {
+
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+section.portfolio .projetos .projeto {
+    margin: 10px;
+    width: 100%;
+    max-width: 300px;
+    transition: all 1s;
+}
+
+section.portfolio .projetos .projeto:hover {
+    max-width: 400px;
+    transition: all 1s;
+}
+
+section.portfolio .projetos .projeto a {
+    background-color: #BD5D38;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+
+section.portfolio .projetos .projeto a img{
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px 10px 0 0;
+    transition: all 1s;
+}
+
+section.portfolio .projetos .projeto a img:hover {
+    max-width: 400px;
+    transition: all 1s;
+}
+
+section.portfolio .projetos .projeto a .text-projeto {
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+section.portfolio .projetos .projeto a .text-projeto h1 {
+    font-size: 1.4rem;
+    margin: 10px;
+    font-weight: 100;
+}
+
+section.portfolio .projetos .projeto a .text-projeto p {
+    font-size: 1rem;
+    margin: 10px 5px 20px 5px;
+    justify-content: center;
 }
