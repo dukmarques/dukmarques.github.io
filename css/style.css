@@ -319,18 +319,7 @@ section.portfolio .projetos .projeto a {
 
 section.portfolio .projetos .projeto a img{
     width: 100%;
-    max-width: 300px;
     border-radius: 10px 10px 0 0;
-
-    -webkit-transition: all 1s;
-    transition: all 1s;
-}
-
-section.portfolio .projetos .projeto a img:hover {
-    max-width: 400px;
-
-    -webkit-transition: all 1s;
-    transition: all 1s;
 }
 
 section.portfolio .projetos .projeto a .text-projeto {
