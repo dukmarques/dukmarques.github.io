@@ -41,6 +41,7 @@ header {
     margin: 0 auto;
     height: 64px;
     background-color: #BD5D38;
+    border-bottom: 1px solid rgba(123, 131, 139, 0.5);
 }
 
 header #menu {
@@ -127,7 +128,7 @@ section.banner .img-banner {
 section.banner .img-banner img {
     justify-content: flex-end;
     width: 90%;
-    max-width: 250px;
+    max-width: 300px;
     border: 5px solid rgba(123, 131, 139, 0.3);
     border-radius: 50%;
 
@@ -341,4 +342,113 @@ section.portfolio .projetos .projeto a .text-projeto p {
     font-size: 1rem;
     margin: 10px 5px 20px 5px;
     justify-content: center;
+}
+
+/*Skills*/
+
+section#skills {
+    background-color: #BD5D38;
+    width: 100%;
+}
+
+section .skills-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section .skills-content .skills-intro {
+    text-align: center;
+    margin: 20px 0;
+    color: #FFF;
+    font-family: 'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+}
+
+section .skills-content .skills-intro h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin: 20px;
+    font-weight: 700;
+}
+
+section .skills-content .skills-intro p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+section .skills-content .skills-intro hr {
+    width: 600px;
+    height: 1;
+    border: 1px solid #FFF;
+}
+
+section .skills-content .skills-tecnologies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+section .skills-content .skills-tecnologies .tec {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+section .skills-content .skills-tecnologies .tec .tec-text {
+    color: #FFF;
+    font-family: 'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+}
+
+section .skills-content .skills-tecnologies .tec .tec-text h1 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin: 20px;
+    font-weight: 300;
+}
+
+section .skills-content .skills-tecnologies .tec .tec-text h1 i {
+    margin-left: 20px;
+    font-size: 1.5rem;
+}
+
+section .skills-content .skills-tecnologies .tec .tec-text p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+section .skills-content .skills-tecnologies .tec .tec-icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #FFF;
+    flex-wrap: wrap;
+}
+
+section .skills-content .skills-tecnologies .tec .tec-icons i {
+    font-size: 5rem;
+    display: flex;
+    flex-direction: column;
+
+    -webkit-transition: all 1s;
+    transition: all 1s;
+}
+
+section .skills-content .skills-tecnologies .tec .tec-icons i:hover {
+    font-size: 6rem;
+    color: black;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+}
+
+section .skills-content .skills-tecnologies .tec .tec-icons i:hover::after {
+    content: "HTML5";
+    padding-top: 10px;
+    font-family: 'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+    font-size: 1.5rem;
+
+    -webkit-transition: all 1s;
+    transition: all 1s;
 }
