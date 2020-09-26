@@ -589,19 +589,14 @@ section .contato-content .contato-sociais ul li a:hover {
     flex-direction: column;
     content: "/dukmarques";
     font-size: 1rem;
-
-    -webkit-transition: all 1s;
-    transition: all 1s;
 }
 
 #email:hover::after {
     display: flex;
+    font-size: 3.2rem;
     flex-direction: column;
-    content: "eduardomarques@outlook.com";
+    content: "eduardomarques@outlook";
     font-size: 1rem;
-
-    -webkit-transition: all 1s;
-    transition: all 1s;
 }
 
 /*Footer --------------------------------------*/
@@ -618,6 +613,11 @@ footer {
 
 .footer-content p {
     font-size: 0.9rem;
+}
+
+.footer-content p i {
+    font-size: 25px;
+    color: #BD5D38;
 }
 
 /*Breakpoints*/
