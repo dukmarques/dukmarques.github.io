@@ -74,7 +74,7 @@ header #menu nav {
 
 header #menu nav ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 header #menu nav ul li {
@@ -186,6 +186,9 @@ section.banner .text-banner i {
 /*About --------------------------------------*/
 section#about {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #BD5D38;
 }
 
@@ -195,10 +198,10 @@ section .content-about {
     justify-content: center;
     align-items: center;
     text-align: center;
+    
     color: #FFF;
     font-family: 'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
-    padding: 30px;
-    margin: 30px 10px;
+    padding: 20px;
 }
 
 section .content-about h1 {
@@ -619,6 +622,77 @@ footer {
 
 /*Breakpoints*/
 
-@media (max-width: 700px) {
+@media (min-width: 700px) {
+    .container {
+        max-width: 75%;
+        margin: 0 auto;
+    }
+
+    header {
+        position: sticky;
+        top: 0;
+    }
+
+    header #menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    header #menu nav ul {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 30px;
+    }
+
+    section.banner {
+        max-width: 900px;
+        flex-direction: row;
+    }
+
+    section.banner .img-banner {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 10px;
+    }
+
+    section.banner .img-banner img {
+        width: 60%;
+    }
+
+    section.banner .img-banner img:hover {
+        width: 80%;
+    }
     
+    section.banner .text-banner {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    
+    section.banner .text-banner h1 {
+        font-size: 4rem;
+    }
+    
+    section.banner .text-banner h1:hover {
+        font-size: 4.3rem;
+    }
+    
+    section.banner .text-banner h3 {
+        font-size: 1.4rem;
+    }
+
+    section.banner .text-banner h3:hover {
+        font-size: 1.7rem;
+    }
+
+    section#about {
+        height: 400px;
+    }
+
+    section .content-about {
+        max-width: 60%;
+    }
 }
