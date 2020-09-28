@@ -638,7 +638,7 @@ section .contato-content .contato-sociais {
 }
 
 section .contato-content .contato-sociais ul {
-    width: 70%;
+    width: 100%;
     height: 100px;
     display: flex;
     justify-content: space-around;
@@ -646,23 +646,39 @@ section .contato-content .contato-sociais ul {
 }
 
 section .contato-content .contato-sociais ul li {
-    margin: 20px 10px;
     font-size: 3rem;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+    max-width: 130px;
 
     color: #24252F;
 }
 
-section .contato-content .contato-sociais ul li a {
+section .contato-content .contato-sociais ul li a,
+section .contato-content .contato-sociais ul li #email {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
     color: #24252F;
+    cursor: pointer;
+
+    width: 100%;
+    height: 100%;
 
     -webkit-transition: all 1s;
     transition: all 1s;
 }
 
-section .contato-content .contato-sociais ul li a:hover {
-    color: #24252F;
+section .contato-content .contato-sociais ul li a:hover,
+section .contato-content .contato-sociais ul li #email:hover {
     font-size: 3.2rem;
 
     -webkit-transition: all 1s;
@@ -677,10 +693,11 @@ section .contato-content .contato-sociais ul li a:hover {
 }
 
 #email:hover::after {
-    display: flex;
-    font-size: 3.2rem;
-    flex-direction: column;
     content: "eduardomarques@outlook";
+    display: flex;
+    font-size: 2rem;
+    font-weight: 100;
+    flex-direction: column;
     font-size: 1rem;
 }
 
@@ -833,4 +850,22 @@ footer {
     }
 
     /*End Skills ---------------------------*/
+
+
+    /*Contato ------------------------------*/
+    section .contato-content .contato-sociais ul {
+        justify-content: center;
+        height: 150px;
+    }
+
+    section .contato-content .contato-sociais ul li {
+        font-size: 4.5rem;
+        margin: 20px 40px;
+    }
+
+    section .contato-content .contato-sociais ul li a:hover,
+    section .contato-content .contato-sociais ul li #email:hover {
+    font-size: 5rem;
+}
+    /*End Contato ---------------------------*/
 }
