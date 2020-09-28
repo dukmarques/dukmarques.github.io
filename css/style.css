@@ -557,38 +557,56 @@ section .skills-content .skills-tecnologies .tec .tec-icons i:hover {
 /*Alterando as cores dos icones de skills*/
 #css:hover {
     color: rgb(79, 156, 230);
+    -webkit-transition: all 1s;
+    transition: all 1s;
 }
 
 #js:hover {
     color: rgb(238, 211, 28);
+    -webkit-transition: all 1s;
+    transition: all 1s;
 }
 
 #bootstrap:hover {
     color: rgb(98, 59, 151);
+    -webkit-transition: all 1s;
+    transition: all 1s;
 }
 
 #react:hover {
     color: rgb(86, 213, 250);
+    -webkit-transition: all 1s;
+    transition: all 1s;
 }
 
 #php:hover {
     color: rgb(108, 112, 170);
+    -webkit-transition: all 1s;
+    transition: all 1s;
 }
 
 #laravel:hover {
     color: rgb(237, 51, 40);
+    -webkit-transition: all 1s;
+    transition: all 1s;
 }
 
 #node:hover {
     color: rgb(86, 170, 63);
+    -webkit-transition: all 1s;
+    transition: all 1s;
 }
 
 #rn:hover {
     color: rgb(0, 211, 253);
+    -webkit-transition: all 1s;
+    transition: all 1s;
 }
 
 #android:hover {
     color: rgb(41, 218, 122);
+    -webkit-transition: all 1s;
+    transition: all 1s;
 }
 
 /*Transições com after para os icons ---------------*/
