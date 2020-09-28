@@ -383,12 +383,19 @@ section .skills-content .skills-tecnologies {
     align-items: center;
     justify-content: center;
     text-align: center;
+
+    width: 100%;
+
+    margin: 10px;
 }
 
 section .skills-content .skills-tecnologies .tec {
     display: flex;
     flex-direction: column;
     margin: 10px;
+
+    width: 95%;
+    height: 100%;
 }
 
 section .skills-content .skills-tecnologies .tec .tec-text {
@@ -399,10 +406,12 @@ section .skills-content .skills-tecnologies .tec .tec-text {
     justify-content: center;
     align-items: center;
     font-family: 'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+
+    width: 100%;
 }
 
 section .skills-content .skills-tecnologies .tec .tec-text h1 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin: 20px;
     font-weight: 300;
 }
@@ -410,11 +419,6 @@ section .skills-content .skills-tecnologies .tec .tec-text h1 {
 section .skills-content .skills-tecnologies .tec .tec-text h1 i {
     margin-left: 20px;
     font-size: 1.5rem;
-}
-
-section .skills-content .skills-tecnologies .tec .tec-text p {
-    font-size: 1rem;
-    margin-bottom: 10px;
 }
 
 section .skills-content .skills-tecnologies .tec .tec-text hr {
@@ -429,12 +433,24 @@ section .skills-content .skills-tecnologies .tec .tec-icons {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    color: #FFF;
     flex-wrap: wrap;
+    flex-grow: 1;
+    color: #FFF;
 }
+
+section .skills-content .skills-tecnologies .tec .tec-icons .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    width: 20%;
+    height: 100%;
+} 
 
 section .skills-content .skills-tecnologies .tec .tec-icons i {
     font-size: 4rem;
+    text-align: center;
     display: flex;
     flex-direction: column;
 
@@ -447,6 +463,50 @@ section .skills-content .skills-tecnologies .tec .tec-icons i:hover {
     color: #BD5D38;
     -webkit-transition: all 1s;
     transition: all 1s;
+}
+
+section .skills-content .skills-tecnologies .tec .tec-icons i:hover {
+    font-size: 5rem;
+    color: rgb(239, 90, 37);
+    -webkit-transition: all 1s;
+    transition: all 1s;
+}
+
+/*Alterando as cores dos icones de skills*/
+#css:hover {
+    color: rgb(79, 156, 230);
+}
+
+#js:hover {
+    color: rgb(238, 211, 28);
+}
+
+#bootstrap:hover {
+    color: rgb(98, 59, 151);
+}
+
+#react:hover {
+    color: rgb(86, 213, 250);
+}
+
+#php:hover {
+    color: rgb(108, 112, 170);
+}
+
+#laravel:hover {
+    color: rgb(237, 51, 40);
+}
+
+#node:hover {
+    color: rgb(86, 170, 63);
+}
+
+#rn:hover {
+    color: rgb(0, 211, 253);
+}
+
+#android:hover {
+    color: rgb(41, 218, 122);
 }
 
 /*Transições com after para os icons ---------------*/
@@ -672,6 +732,16 @@ footer {
     }
     /*End Header -----------------------*/
 
+    /*About ----------------------------*/
+    section#about {
+        height: 400px;
+    }
+
+    section .content-about {
+        max-width: 60%;
+    }
+    /*End About -----------------------*/
+
     /*Banner --------------------------*/
     section.banner {
         max-width: 900px;
@@ -728,13 +798,39 @@ footer {
 
     /*End Portfolio -----------------------*/
 
-    /*About ----------------------------*/
-    section#about {
-        height: 400px;
+    /*Skills ------------------------------*/
+    
+    section .skills-content .skills-tecnologies .tec {
+        align-items: center;
+        justify-content: center;
+        width: 95%;
+        height: 350px;
+    }
+    
+    section .skills-content .skills-tecnologies .tec .tec-text h1 {
+        font-size: 2rem;
+    }
+    
+    section .skills-content .skills-tecnologies .tec .tec-text h1 i {
+        font-size: 1.8rem;
+    }
+    
+    section .skills-content .skills-tecnologies .tec .tec-text hr {
+        width: 120px;
+    }
+    
+    section .skills-content .skills-tecnologies .tec .tec-icons {
+        height: 100px;
+        width: 65%;
+    }
+    
+    section .skills-content .skills-tecnologies .tec .tec-icons i {
+        font-size: 6rem;
+    }
+    
+    section .skills-content .skills-tecnologies .tec .tec-icons i:hover {
+        font-size: 6.5rem;
     }
 
-    section .content-about {
-        max-width: 60%;
-    }
-    /*End About -------------------------*/
+    /*End Skills ---------------------------*/
 }
