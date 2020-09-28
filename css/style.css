@@ -354,12 +354,6 @@ section.portfolio .projetos .projeto a .text-projeto p {
     align-items: center;
 }
 
-.modal:target ˜ box {
-    top: 150px;
-    transition: all 0.3s;
-    transition-delay: 0.2s;
-}
-
 .box {
     width: 90%;
     height: 80%;
