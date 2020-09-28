@@ -25,8 +25,6 @@ li {
 
 a {
     text-decoration: none;
-    margin: 0;
-    padding: 0;
     cursor: pointer;
 }
 
@@ -234,6 +232,11 @@ section .content-about hr {
 section.portfolio {
     background-color: #FFF;
     width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 section.portfolio .portfolio-text {
@@ -262,7 +265,7 @@ section.portfolio .portfolio-text hr {
     margin-bottom: 10px;
 }
 
-section.portfolio .projetos {
+section.portfolio article.projetos {
     width: 100%;
 
     display: flex;
@@ -271,32 +274,43 @@ section.portfolio .projetos {
     align-items: center;
 }
 
-section.portfolio .projetos .projeto {
-    margin: 10px;
+section.portfolio article.projetos .projeto {
+    margin: 0px 20px;
+    height: 70vh;
     width: 100%;
-    max-width: 300px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     -webkit-transition: all 1s;
     transition: all 1s;
 }
 
-section.portfolio .projetos .projeto:hover {
-    max-width: 400px;
-
-    -webkit-transition: all 1s;
-    transition: all 1s;
-}
-
-section.portfolio .projetos .projeto a {
+section.portfolio article.projetos .projeto a {
+    width: 90%;
+    height: 90%;
     background-color: #24252F;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 10px;
+
+    -webkit-transition: all 1s;
+    transition: all 1s;
+}
+
+section.portfolio .projetos .projeto a:hover {
+    width: 100%;
+    height: 100%;
+
+    -webkit-transition: all 1s;
+    transition: all 1s;
 }
 
 section.portfolio .projetos .projeto a img{
     width: 100%;
+    height: 100%;
     border-radius: 10px 10px 0 0;
 }
 
@@ -639,6 +653,7 @@ footer {
         margin: 0 auto;
     }
 
+    /*Header --------------------------*/
     header {
         position: sticky;
         top: 0;
@@ -655,7 +670,9 @@ footer {
         justify-content: flex-end;
         margin-right: 30px;
     }
+    /*End Header -----------------------*/
 
+    /*Banner --------------------------*/
     section.banner {
         max-width: 900px;
         flex-direction: row;
@@ -699,6 +716,19 @@ footer {
         font-size: 1.7rem;
     }
 
+    /*End Banner -----------------------*/
+
+    /*Portfolio ------------------------*/
+    section.portfolio article.projetos .projeto {
+        margin: 0px 10px;
+        height: 60vh;
+        width: 40%; /*400px*/
+        max-width: 400px;
+    }
+
+    /*End Portfolio -----------------------*/
+
+    /*About ----------------------------*/
     section#about {
         height: 400px;
     }
@@ -706,4 +736,5 @@ footer {
     section .content-about {
         max-width: 60%;
     }
+    /*End About -------------------------*/
 }
