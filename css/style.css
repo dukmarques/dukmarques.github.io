@@ -34,7 +34,7 @@ a {
 header {
     width: 100%;
     margin: 0 auto;
-    background-color: #BD5D38;
+    background-color: #24252F;
     border-bottom: 1px solid rgba(123, 131, 139, 0.5);
 }
 
@@ -166,14 +166,16 @@ section.banner .text-banner a {
     padding: 13px 20px;
     color: #FFF;
     font-size: 20px;
-    background-color: #BD5D38;
+    background-color: #24252F;
     border-radius: 10px;
+
+    -webkit-transition: all 1s;
+    transition: all 1s;
 }
 
 section.banner .text-banner a:hover {
-    background-color: #FFF;
-    border: 2px solid #BD5D38;
-    color: #BD5D38;
+    background-color: #BD5D38;
+    color: #FFF;
 
     -webkit-transition: all 1s;
     transition: all 1s;
@@ -189,7 +191,7 @@ section#about {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #BD5D38;
+    background-color: #24252F;
 }
 
 section .content-about {
@@ -205,10 +207,10 @@ section .content-about {
 }
 
 section .content-about h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-transform: uppercase;
-    margin-bottom: 5px;
-    font-weight: 300;
+    margin-bottom: 20px;
+    font-weight: 700;
 }
 
 section .content-about h3 {
@@ -224,8 +226,8 @@ section .content-about p {
 
 section .content-about hr {
     width: 200px;
-    border: 1px solid #FFF;
-    margin-bottom: 10px;
+    border: 1px solid #BD5D38;
+    margin-bottom: 15px;
 }
 
 /*Portfolio --------------------------------------*/
@@ -286,7 +288,7 @@ section.portfolio .projetos .projeto:hover {
 }
 
 section.portfolio .projetos .projeto a {
-    background-color: #BD5D38;
+    background-color: #24252F;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -323,7 +325,7 @@ section.portfolio .projetos .projeto a .text-projeto p {
 section#skills {
     margin-top: 20px;
     width: 100%;
-    background-color: #BD5D38;
+    background-color: #24252F;
 }
 
 section .skills-content {
@@ -358,7 +360,7 @@ section .skills-content .skills-intro p {
 
 section .skills-content .skills-intro hr {
     width: 200px;
-    border: 1px solid #FFF;
+    border: 1px solid #BD5D38;
 }
 
 section .skills-content .skills-tecnologies {
@@ -403,7 +405,7 @@ section .skills-content .skills-tecnologies .tec .tec-text p {
 
 section .skills-content .skills-tecnologies .tec .tec-text hr {
     width: 100px;
-    border: 1px solid #FFF;
+    border: 1px solid #BD5D38;
     margin-bottom: 20px;
 }
 
@@ -428,7 +430,7 @@ section .skills-content .skills-tecnologies .tec .tec-icons i {
 
 section .skills-content .skills-tecnologies .tec .tec-icons i:hover {
     font-size: 5rem;
-    color: #FFD700;
+    color: #BD5D38;
     -webkit-transition: all 1s;
     transition: all 1s;
 }
@@ -455,6 +457,15 @@ section .skills-content .skills-tecnologies .tec .tec-icons i:hover {
 
 #js:hover::after {
     content: "Java Script";
+    font-family: 'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+    font-size: 1.5rem;
+
+    -webkit-transition: all 1s;
+    transition: all 1s;
+}
+
+#bootstrap:hover::after {
+    content: "Bootstrap";
     font-family: 'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
     font-size: 1.5rem;
 
@@ -490,7 +501,7 @@ section .skills-content .skills-tecnologies .tec .tec-icons i:hover {
 }
 
 #node:hover::after {
-    content: "Laravel";
+    content: "Node.JS";
     font-family: 'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
     font-size: 1.5rem;
 
@@ -564,20 +575,20 @@ section .contato-content .contato-sociais ul li {
     margin: 20px 10px;
     font-size: 3rem;
 
-    color: rgba(189, 93, 56, 0.9);
+    color: #24252F;
 }
 
 section .contato-content .contato-sociais ul li a {
     display: flex;
     flex-direction: column;
-    color: rgba(189, 93, 56, 0.9);
+    color: #24252F;
 
     -webkit-transition: all 1s;
     transition: all 1s;
 }
 
 section .contato-content .contato-sociais ul li a:hover {
-    color: #bb3b08;
+    color: #24252F;
     font-size: 3.2rem;
 
     -webkit-transition: all 1s;
@@ -601,7 +612,7 @@ section .contato-content .contato-sociais ul li a:hover {
 
 /*Footer --------------------------------------*/
 footer {
-    background-color: #000;
+    background-color: #24252F;
     width: 100%;
 }
 
