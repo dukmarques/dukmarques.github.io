@@ -337,6 +337,90 @@ section.portfolio .projetos .projeto a .text-projeto p {
     justify-content: center;
 }
 
+/*Modal portfólio*/
+.modal {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    /*display: none;*/
+}
+
+.modal:target {
+    display: block;
+}
+
+.modal:target ˜ box {
+    top: 150px;
+    transition: all 0.3s;
+    transition-delay: 0.2s;
+}
+
+.box {
+    width: 90%;
+    height: 90%;
+    margin: 15px;
+    position: absolute;
+
+    display: flex;
+    justify-content: center;
+
+    background: #FFF;
+    border-radius: 10px;
+}
+
+.box .box-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.box .box-content img {
+    margin-top: 30px;
+    padding: 0 3px;
+    width: 100%;
+    height: 40%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.box .box-content h1 {
+    color: #24252F;
+    font-size: 2rem;
+    margin: 10px;
+}
+
+.box .box-content p {
+    color: #24252F;
+    font-size: 1.2rem;
+    margin: 0 5px;
+}
+
+.box .box-content a {
+    color: #FFF;
+    font-size: 1.2rem;
+    background: #BD5D38;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px;
+}
+
+.box .close {
+    color: #BD5D38;
+    font-size: 2.3rem;
+    position: absolute;
+    right: 10px;
+}
+
+.close:hover {
+    opacity: 0.6;
+}
+
 /*Skills --------------------------------------*/
 section#skills {
     margin-top: 20px;
