@@ -392,13 +392,26 @@ section.portfolio .projetos .projeto a .text-projeto p {
     margin: 0 5px;
 }
 
-.box .box-content a {
+.box .box-content .modal-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.box .box-content .modal-buttons a {
     color: #FFF;
     font-size: 1.2rem;
     background: #BD5D38;
     border-radius: 5px;
     padding: 10px;
-    margin: 20px;
+    margin: 3px;
+}
+
+.box .box-content .modal-buttons .git {
+    background: #24252F;
+    margin-bottom: 10px;
 }
 
 .box .close {
