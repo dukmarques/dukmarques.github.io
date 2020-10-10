@@ -12,7 +12,6 @@ html {
     scroll-behavior: smooth;
 }
 
-
 body {
     background-color: #FFF;
     margin: 0;
@@ -26,6 +25,10 @@ li {
 a {
     text-decoration: none;
     cursor: pointer;
+}
+
+.hidden {
+    display: none;
 }
 
 /*Header --------------------------------------*/
