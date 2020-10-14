@@ -66,3 +66,12 @@
 .banner-link {
     animation-delay: 0.7s;
 }
+
+/*About*/
+.about-text {
+    animation-delay: 0.5s;
+}
+
+.about-subtext {
+    animation-delay: 0.6s;
+}
