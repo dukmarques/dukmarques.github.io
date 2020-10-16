@@ -67,6 +67,8 @@ header #menu .logo a img {
 header #menu .logo a h1 {
     color: #FFF;
     margin-left: 5px;
+    font-size: 1.2rem;
+    width: 120px;
 }
 
 header #menu nav {
