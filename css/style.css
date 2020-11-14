@@ -1,1007 +1,1230 @@
+@charset "UTF-8";
 /*Resert --------------------------------------*/
-
-*{
-    margin: 0;
-    padding: 0;
-    font-size: 100%;
-    font-family: 'Lato', sans-serif;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font-family: 'Lato', sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    background-color: #FFF;
-    margin: 0;
-    padding: 0;
+  background-color: #24252F;
+  margin: 0;
+  padding: 0;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
-    cursor: pointer;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
 
 /*Header --------------------------------------*/
 header {
-    width: 100%;
-    margin: 0 auto;
-    background-color: #24252F;
-    border-bottom: 1px solid rgba(123, 131, 139, 0.5);
+  width: 100%;
+  margin: 0 auto;
+  background-color: #24252F;
+  border-bottom: 1px solid rgba(123, 131, 139, 0.5);
 }
 
 header #menu {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-header #menu {
-    display: flex;
-    flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 header #menu .logo a {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
 }
 
 header #menu .logo a img {
-    width: 48px;
-    height: 48px;
+  width: 48px;
+  height: 48px;
 }
 
 header #menu .logo a h1 {
-    color: #FFF;
-    margin-left: 5px;
-    font-size: 1.2rem;
-    width: 120px;
+  color: #FFF;
+  margin-left: 5px;
+  font-size: 1.2rem;
+  width: 120px;
 }
 
-header #menu nav {
-    width: 100%;
+header nav {
+  width: 100%;
 }
 
-header #menu nav ul {
-    display: flex;
-    justify-content: center;
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-header #menu nav ul li {
-    margin: 10px;
+header nav ul li {
+  margin: 10px;
 }
 
-header #menu nav ul li a {
-    color: #64FA9B;
-    font-size: 18px;
+header nav ul li a {
+  color: #64FA9B;
+  font-size: 18px;
 }
 
-header #menu nav ul li a:hover {
-    color: #5FE36A;
+header nav ul li a:hover {
+  color: #5FE36A;
 }
 
 /*Banner --------------------------------------*/
-section.banner {
-    width: 100%;
-    height: 600px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 30px 20px;
+@-webkit-keyframes colorCycle {
+  0% {
+    -webkit-filter: brightness(0) invert(1);
+            filter: brightness(0) invert(1);
+  }
+  50% {
+    -webkit-filter: none;
+            filter: none;
+  }
+}
+@keyframes colorCycle {
+  0% {
+    -webkit-filter: brightness(0) invert(1);
+            filter: brightness(0) invert(1);
+  }
+  50% {
+    -webkit-filter: none;
+            filter: none;
+  }
 }
 
-section.banner .img-banner img {
-    justify-content: flex-end;
-    width: 40%;
-    max-width: 300px;
-    border: 5px solid #5FE36A;
-    border-radius: 50%;
+.banner {
+  width: 100%;
+  height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding: 30px 20px;
 }
 
-section.banner .img-banner img:hover {
-    width: 200px;
-    border: 5px solid #64FA9B;
-    
-    -webkit-transition: all 1s;
-    transition: all 1s;
+.banner .img-banner img {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 40%;
+  max-width: 300px;
+  border: 5px solid #4ca2cd;
+  border-radius: 50%;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
-section.banner .text-banner {
-    width: 100%;
+.banner .img-banner img:hover {
+  width: 200px;
+  border: 5px solid #5FE36A;
 }
 
-section.banner .text-banner h1 {
-    font-size: 2rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    font-family: 'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
-
-    -webkit-transition: all 1s;
-    transition: all 1s;
+.banner .text-banner {
+  width: 100%;
 }
 
-section.banner .text-banner h1:hover {
-    font-size: 2.5rem;
-    -webkit-transition: all 1s;
-    transition: all 1s;
+.banner .text-banner h1 {
+  background: -webkit-gradient(linear, left top, right top, from(#00F260), to(#0575E6));
+  background: linear-gradient(90deg, #00F260, #0575E6);
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: 'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+  -webkit-animation: colorCycle 8s ease-in-out infinite;
+          animation: colorCycle 8s ease-in-out infinite;
 }
 
-section.banner .text-banner h1 span {
-    color: #5FE36A;
-    font-family: 'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+.banner .text-banner h1 span {
+  color: #5FE36A;
+  font-family: 'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
 }
 
-section.banner .text-banner h3 {
-    font-size: 1.2rem;
-    color: rgb(123, 131, 139);
-    text-transform: uppercase;
-    font-family: 'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
-    margin-bottom: 50px;
-    -webkit-transition: all 1s;
-    transition: all 1s;
+.banner .text-banner h3 {
+  background: -webkit-gradient(linear, left top, right top, from(#00F260), to(#0575E6));
+  background: linear-gradient(90deg, #00F260, #0575E6);
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.2rem;
+  color: #FFF;
+  text-transform: uppercase;
+  font-family: 'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+  margin-bottom: 50px;
+  -webkit-animation: colorCycle 8s ease-in-out infinite;
+          animation: colorCycle 8s ease-in-out infinite;
+  -webkit-animation-delay: 3.33s;
+          animation-delay: 3.33s;
 }
 
-section.banner .text-banner h3:hover {
-    font-size: 2rem;
-    -webkit-transition: all 1s;
-    transition: all 1s;
+.banner .text-banner a {
+  padding: 13px 20px;
+  color: #FFF !important;
+  background: -webkit-gradient(linear, left top, right top, from(#00F260), to(#0575E6)) !important;
+  background: linear-gradient(90deg, #00F260, #0575E6) !important;
+  font-size: 20px;
+  border-radius: 10px;
 }
 
-section.banner .text-banner a {
-    padding: 13px 20px;
-    color: #FFF;
-    font-size: 20px;
-    background: linear-gradient(225deg, #64FA9B 0%, #5FE36A 100%);
-    border-radius: 10px;
-
-    -webkit-transition: all 1s;
-    transition: all 1s;
+.banner .text-banner a:hover {
+  color: #24252F;
 }
 
-section.banner .text-banner a:hover {
-    padding: 15px 22px;
-    color: #FFF;
-
-    -webkit-transition: all 1s;
-    transition: all 1s;
-}
-
-section.banner .text-banner i {
-    margin-left: 5px;
+.banner .text-banner i {
+  margin-left: 5px;
 }
 
 /*About --------------------------------------*/
 section#about {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #24252F;
+  border-top: 1px solid rgba(123, 131, 139, 0.5);
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section#about .content-about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #FFF;
+  font-family: 'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+  padding: 20px;
+}
+
+section#about .content-about h1 {
+  background: -webkit-gradient(linear, left top, right top, from(#00F260), to(#0575E6));
+  background: linear-gradient(90deg, #00F260, #0575E6);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+section#about .content-about h3 {
+  font-size: 1.2rem;
+  color: #FFF;
+  margin-bottom: 10px;
+  font-weight: 300;
+}
+
+section#about .content-about p {
+  font-size: 1rem;
+}
+
+section#about .content-about hr {
+  width: 200px;
+  border: 1px solid #00F260;
+  margin-bottom: 15px;
+  background: -webkit-gradient(linear, left top, right top, from(#00F260), to(#0575E6));
+  background: linear-gradient(90deg, #00F260, #0575E6);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-
-section .content-about {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    
-    color: #FFF;
-    font-family: 'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
-    padding: 20px;
-}
-
-section .content-about h1 {
-    color: #5FE36A;
-    font-size: 2.5rem;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    font-weight: 700;
-}
-
-section .content-about h3 {
-    font-size: 1.2rem;
-    color: #FFF;
-    margin-bottom: 10px;
-    font-weight: 300;
-}
-
-section .content-about p {
-    font-size: 1rem;
-}
-
-section .content-about hr {
-    width: 200px;
-    border: 1px solid #FFF;
-    margin-bottom: 15px;
-}
-
-/*Portfolio --------------------------------------*/
-section.portfolio {
-    background-color: #FFF;
-    width: 100%;
-    height: 100%;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-section.portfolio .portfolio-text {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-section.portfolio .portfolio-text h1 {
-    color: #5FE36A;
-    font-size: 2.5rem;
-    text-transform: uppercase;
-    margin: 20px;
-    font-weight: 700;
-}
-
-section.portfolio .portfolio-text p {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-}
-
-section.portfolio .portfolio-text hr {
-    width: 200px;
-    border: 1px solid #5FE36A;
-    margin-bottom: 10px;
-}
-
-section.portfolio article.projetos {
-    width: 100%;
-
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-section.portfolio article.projetos .projeto {
-    margin: 0px 20px;
-    height: 70vh;
-    width: 100%;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    -webkit-transition: all 1s;
-    transition: all 1s;
-}
-
-section.portfolio article.projetos .projeto a {
-    width: 90%;
-    height: 90%;
-    background-color: #24252F;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    border-radius: 10px;
-
-    -webkit-transition: all 1s;
-    transition: all 1s;
-}
-
-section.portfolio .projetos .projeto a img{
-    width: 100%;
-    height: 65%;
-    object-fit: cover;
-    border-radius: 10px 10px 0 0;
-}
-
-section.portfolio .projetos .projeto a .text-projeto {
-    color: #FFF;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-section.portfolio .projetos .projeto a .text-projeto h1 {
-    font-size: 1.4rem;
-    margin: 10px;
-    font-weight: 100;
-}
-
-section.portfolio .projetos .projeto a .text-projeto p {
-    font-size: 0.9rem;
-    margin: 10px 5px 20px 5px;
-    justify-content: center;
-}
-
-/*Modal portfólio*/
-.modal {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.8);
-    display: none;
-}
-
-.modal:target {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.box {
-    width: 90%;
-    height: 80%;
-    margin: 15px;
-    position: absolute;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    background: #FFF;
-    border-radius: 10px;
-}
-
-.box .box-content {
-    width: 100%;
-    height: 95%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.box .box-content img {
-    margin-top: 30px;
-    padding: 0 10px;
-    width: 100%;
-    height: 40%;
-    object-fit: cover;
-    border-radius: 2.5%;
-}
-
-.box .box-content h1 {
-    color: #24252F;
-    font-size: 2rem;
-    margin: 10px;
-}
-
-.box .box-content p {
-    color: #24252F;
-    font-size: 1.2rem;
-    margin: 0 5px;
-}
-
-.box .box-content .modal-buttons {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
-}
-
-.box .box-content .modal-buttons a {
-    color: #FFF;
-    font-size: 1.2rem;
-    background: #5FE36A;
-    border-radius: 5px;
-    padding: 10px;
-    margin: 3px;
-}
-
-.box .box-content .modal-buttons .git {
-    background: #24252F;
-    margin-bottom: 10px;
-}
-
-.box .close {
-    color: #5FE36A;
-    font-size: 2.3rem;
-    position: fixed;
-    top: 10px;
-    right: 20px;
-}
-
-/*Skills --------------------------------------*/
-section#skills {
-    margin-top: 20px;
-    width: 100%;
-    background-color: #24252F;
-}
-
-section .skills-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-section .skills-content .skills-intro {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 20px 0;
-    color: #FFF;
-    font-family: 'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
-}
-
-section .skills-content .skills-intro h1 {
-    color: #5FE36A;
-    font-size: 2.3rem;
-    text-transform: uppercase;
-    margin: 20px;
-    font-weight: 700;
-}
-
-section .skills-content .skills-intro p {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-}
-
-section .skills-content .skills-intro hr {
-    width: 200px;
-    border: 1px solid #5FE36A;
-}
-
-section .skills-content .skills-tecnologies {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-
-    width: 100%;
-
-    margin: 10px;
-}
-
-section .skills-content .skills-tecnologies .tec {
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
-
-    width: 95%;
-    height: 100%;
-}
-
-section .skills-content .skills-tecnologies .tec .tec-text {
-    color: #FFF;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
-
-    width: 100%;
-}
-
-section .skills-content .skills-tecnologies .tec .tec-text h1 {
-    font-size: 1.5rem;
-    margin: 20px;
-    font-weight: 300;
-}
-
-section .skills-content .skills-tecnologies .tec .tec-text h1 i {
-    margin-left: 20px;
-    font-size: 1.5rem;
-}
-
-section .skills-content .skills-tecnologies .tec .tec-text hr {
-    width: 100px;
-    border: 1px solid #5FE36A;
-    margin-bottom: 20px;
-}
-
-section .skills-content .skills-tecnologies .tec .tec-icons {
-    height: 100px;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-grow: 1;
-    color: #FFF;
-}
-
-section .skills-content .skills-tecnologies .tec .tec-icons .icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 10px;
-    width: 20%;
-    height: 100%;
-} 
-
-section .skills-content .skills-tecnologies .tec .tec-icons i {
-    font-size: 4rem;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-
-    -webkit-transition: all 1s;
-    transition: all 1s;
-}
-
-section .skills-content .skills-tecnologies .tec .tec-icons i:hover {
-    font-size: 5rem;
-    color: #BD5D38;
-    -webkit-transition: all 1s;
-    transition: all 1s;
-}
-
-section .skills-content .skills-tecnologies .tec .tec-icons i:hover {
-    font-size: 5rem;
-    color: rgb(239, 90, 37);
-    -webkit-transition: all 1s;
-    transition: all 1s;
-}
-
-/*Alterando as cores dos icones de skills*/
-#css:hover {
-    color: rgb(79, 156, 230);
-    -webkit-transition: all 1s;
-    transition: all 1s;
-}
-
-#js:hover {
-    color: rgb(238, 211, 28);
-    -webkit-transition: all 1s;
-    transition: all 1s;
-}
-
-#bootstrap:hover {
-    color: rgb(98, 59, 151);
-    -webkit-transition: all 1s;
-    transition: all 1s;
-}
-
-#react:hover {
-    color: rgb(86, 213, 250);
-    -webkit-transition: all 1s;
-    transition: all 1s;
-}
-
-#php:hover {
-    color: rgb(108, 112, 170);
-    -webkit-transition: all 1s;
-    transition: all 1s;
-}
-
-#laravel:hover {
-    color: rgb(237, 51, 40);
-    -webkit-transition: all 1s;
-    transition: all 1s;
-}
-
-#node:hover {
-    color: rgb(86, 170, 63);
-    -webkit-transition: all 1s;
-    transition: all 1s;
-}
-
-#rn:hover {
-    color: rgb(0, 211, 253);
-    -webkit-transition: all 1s;
-    transition: all 1s;
-}
-
-#android:hover {
-    color: rgb(41, 218, 122);
-    -webkit-transition: all 1s;
-    transition: all 1s;
-}
-
-/*Transições com after para os icons ---------------*/
-
-#html:hover::after {
-    content: "HTML 5";
-    font-family: 'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
-    font-size: 1.5rem;
-
-    -webkit-transition: all 1s;
-    transition: all 1s;
-}
-
-#css:hover::after {
-    content: "CSS 3";
-    font-family: 'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
-    font-size: 1.5rem;
-
-    -webkit-transition: all 1s;
-    transition: all 1s;
-}
-
-#js:hover::after {
-    content: "Java Script";
-    font-family: 'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
-    font-size: 1.5rem;
-
-    -webkit-transition: all 1s;
-    transition: all 1s;
-}
-
-#bootstrap:hover::after {
-    content: "Bootstrap";
-    font-family: 'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
-    font-size: 1.5rem;
-
-    -webkit-transition: all 1s;
-    transition: all 1s;
-}
-
-#react:hover::after {
-    content: "React.JS";
-    font-family: 'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
-    font-size: 1.5rem;
-
-    -webkit-transition: all 1s;
-    transition: all 1s;
-}
-
-#php:hover::after {
-    content: "PHP";
-    font-family: 'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
-    font-size: 1.5rem;
-
-    -webkit-transition: all 1s;
-    transition: all 1s;
-}
-
-#laravel:hover::after {
-    content: "Laravel";
-    font-family: 'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
-    font-size: 1.5rem;
-
-    -webkit-transition: all 1s;
-    transition: all 1s;
-}
-
-#node:hover::after {
-    content: "Node.JS";
-    font-family: 'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
-    font-size: 1.5rem;
-
-    -webkit-transition: all 1s;
-    transition: all 1s;
-}
-
-#rn:hover::after {
-    content: "React Native";
-    font-family: 'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
-    font-size: 1.5rem;
-
-    -webkit-transition: all 1s;
-    transition: all 1s;
-}
-
-#android:hover::after {
-    content: "Android (Java)";
-    font-family: 'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
-    font-size: 1.5rem;
-
-    -webkit-transition: all 1s;
-    transition: all 1s;
-}
-
-/*Fim transições icons -----------*/
 
 /*Contato --------------------------------------*/
-section .contato-content {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.contato-content {
+  border-top: 1px solid rgba(123, 131, 139, 0.5);
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-section .contato-content .contato-intro {
-    text-align: center;
-    color: #000;
-    font-family: 'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+.contato-content .contato-intro {
+  text-align: center;
+  background: -webkit-gradient(linear, left top, right top, from(#00F260), to(#0575E6));
+  background: linear-gradient(90deg, #00F260, #0575E6);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
 }
 
-section .contato-content .contato-intro h1 {
-    color: #5FE36A;
-    font-size: 2.3rem;
-    text-transform: uppercase;
-    margin: 10px;
-    font-weight: 700;
+.contato-content .contato-intro h1 {
+  color: #5FE36A;
+  font-size: 2.3rem;
+  text-transform: uppercase;
+  margin: 10px;
+  font-weight: 700;
 }
 
-section .contato-content .contato-intro h3 {
-    font-size: 1rem;
-    margin-bottom: 20px;
+.contato-content .contato-intro h3 {
+  font-size: 1rem;
+  margin-bottom: 20px;
 }
 
-section .contato-content .contato-sociais {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    text-align: center;
+.contato-content .contato-sociais {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  text-align: center;
 }
 
-section .contato-content .contato-sociais ul {
-    width: 100%;
-    height: 100px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.contato-content .contato-sociais ul {
+  width: 100%;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-section .contato-content .contato-sociais ul li {
-    font-size: 3rem;
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    width: 100%;
-    height: 100%;
-    max-width: 130px;
-
-    color: #24252F;
+.contato-content .contato-sociais ul li {
+  font-size: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  max-width: 130px;
+  color: #FFF;
 }
 
-section .contato-content .contato-sociais ul li a,
-section .contato-content .contato-sociais ul li #email {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    color: #24252F;
-    cursor: pointer;
-
-    width: 100%;
-    height: 100%;
-
-    -webkit-transition: all 1s;
-    transition: all 1s;
+.contato-content .contato-sociais ul li a, .contato-content .contato-sociais ul li #email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #FFF;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
-section .contato-content .contato-sociais ul li a:hover,
-section .contato-content .contato-sociais ul li #email:hover {
-    font-size: 3.2rem;
-
-    -webkit-transition: all 1s;
-    transition: all 1s;
+.contato-content .contato-sociais ul li a a:hover, .contato-content .contato-sociais ul li a #email:hover, .contato-content .contato-sociais ul li #email a:hover, .contato-content .contato-sociais ul li #email #email:hover {
+  font-size: 3.2rem;
 }
 
 #git:hover::after {
-    display: flex;
-    flex-direction: column;
-    content: "/dukmarques";
-    font-size: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  content: "/dukmarques";
+  font-size: 1rem;
 }
 
 #email:hover::after {
-    content: "eduardomarques@outlook";
-    display: flex;
-    font-size: 2rem;
-    font-weight: 100;
-    flex-direction: column;
-    font-size: 1rem;
+  content: "eduardomarques@outlook";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 2rem;
+  font-weight: 100;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 1rem;
 }
 
 /*Footer --------------------------------------*/
 footer {
-    background-color: #24252F;
-    width: 100%;
+  border-top: 1px solid rgba(123, 131, 139, 0.5);
+  width: 100%;
 }
 
 .footer-content {
-    color: #FFF;
-    text-align: center;
-    padding: 20px 0;
+  color: #FFF;
+  text-align: center;
+  padding: 20px 0;
 }
 
 .footer-content p {
-    font-size: 0.9rem;
+  font-size: 0.9rem;
 }
 
 .footer-content p i {
-    font-size: 25px;
-    color: #5FE36A;
+  font-size: 25px;
+  color: #5FE36A;
 }
 
+/*Portfolio --------------------------------------*/
+section.portfolio {
+  background-color: #FFF;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.portfolio .portfolio-text {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.portfolio .portfolio-text h1 {
+  color: #5FE36A;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin: 20px;
+  font-weight: 700;
+}
+
+section.portfolio .portfolio-text p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+section.portfolio .portfolio-text hr {
+  width: 200px;
+  border: 1px solid #5FE36A;
+  margin-bottom: 10px;
+}
+
+section.portfolio article.projetos {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.portfolio article.projetos .projeto {
+  margin: 0px 20px;
+  height: 70vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+section.portfolio article.projetos .projeto a {
+  width: 90%;
+  height: 90%;
+  background-color: #24252F;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  border-radius: 10px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+section.portfolio .projetos .projeto a img {
+  width: 100%;
+  height: 65%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+section.portfolio .projetos .projeto a .text-projeto {
+  color: #FFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+section.portfolio .projetos .projeto a .text-projeto h1 {
+  font-size: 1.4rem;
+  margin: 10px;
+  font-weight: 100;
+}
+
+section.portfolio .projetos .projeto a .text-projeto p {
+  font-size: 0.9rem;
+  margin: 10px 5px 20px 5px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/*Modal portfólio*/
+.modal {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+}
+
+.modal:target {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.box {
+  width: 90%;
+  height: 80%;
+  margin: 15px;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #FFF;
+  border-radius: 10px;
+}
+
+.box .box-content {
+  width: 100%;
+  height: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.box .box-content img {
+  margin-top: 30px;
+  padding: 0 10px;
+  width: 100%;
+  height: 40%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 2.5%;
+}
+
+.box .box-content h1 {
+  color: #24252F;
+  font-size: 2rem;
+  margin: 10px;
+}
+
+.box .box-content p {
+  color: #24252F;
+  font-size: 1.2rem;
+  margin: 0 5px;
+}
+
+.box .box-content .modal-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px;
+}
+
+.box .box-content .modal-buttons a {
+  color: #FFF;
+  font-size: 1.2rem;
+  background: #5FE36A;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 3px;
+}
+
+.box .box-content .modal-buttons .git {
+  background: #24252F;
+  margin-bottom: 10px;
+}
+
+.box .close {
+  color: #5FE36A;
+  font-size: 2.3rem;
+  position: fixed;
+  top: 10px;
+  right: 20px;
+}
+
+/*Skills --------------------------------------*/
+section#skills {
+  margin-top: 20px;
+  width: 100%;
+  background-color: #24252F;
+}
+
+section .skills-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section .skills-content .skills-intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin: 20px 0;
+  color: #FFF;
+  font-family: 'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+}
+
+section .skills-content .skills-intro h1 {
+  color: #5FE36A;
+  font-size: 2.3rem;
+  text-transform: uppercase;
+  margin: 20px;
+  font-weight: 700;
+}
+
+section .skills-content .skills-intro p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+section .skills-content .skills-intro hr {
+  width: 200px;
+  border: 1px solid #5FE36A;
+}
+
+section .skills-content .skills-tecnologies {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  width: 100%;
+  margin: 10px;
+}
+
+section .skills-content .skills-tecnologies .tec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10px;
+  width: 95%;
+  height: 100%;
+}
+
+section .skills-content .skills-tecnologies .tec .tec-text {
+  color: #FFF;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+  width: 100%;
+}
+
+section .skills-content .skills-tecnologies .tec .tec-text h1 {
+  font-size: 1.5rem;
+  margin: 20px;
+  font-weight: 300;
+}
+
+section .skills-content .skills-tecnologies .tec .tec-text h1 i {
+  margin-left: 20px;
+  font-size: 1.5rem;
+}
+
+section .skills-content .skills-tecnologies .tec .tec-text hr {
+  width: 100px;
+  border: 1px solid #5FE36A;
+  margin-bottom: 20px;
+}
+
+section .skills-content .skills-tecnologies .tec .tec-icons {
+  height: 100px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  color: #FFF;
+}
+
+section .skills-content .skills-tecnologies .tec .tec-icons .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 10px;
+  width: 20%;
+  height: 100%;
+}
+
+section .skills-content .skills-tecnologies .tec .tec-icons i {
+  font-size: 4rem;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+section .skills-content .skills-tecnologies .tec .tec-icons i:hover {
+  font-size: 5rem;
+  color: #BD5D38;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+section .skills-content .skills-tecnologies .tec .tec-icons i:hover {
+  font-size: 5rem;
+  color: #ef5a25;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+/*Alterando as cores dos icones de skills*/
+#css:hover {
+  color: #4f9ce6;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+#js:hover {
+  color: #eed31c;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+#bootstrap:hover {
+  color: #623b97;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+#react:hover {
+  color: #56d5fa;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+#php:hover {
+  color: #6c70aa;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+#laravel:hover {
+  color: #ed3328;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+#node:hover {
+  color: #56aa3f;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+#rn:hover {
+  color: #00d3fd;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+#android:hover {
+  color: #29da7a;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+/*Transições com after para os icons ---------------*/
+#html:hover::after {
+  content: "HTML 5";
+  font-family: 'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+  font-size: 1.5rem;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+#css:hover::after {
+  content: "CSS 3";
+  font-family: 'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+  font-size: 1.5rem;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+#js:hover::after {
+  content: "Java Script";
+  font-family: 'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+  font-size: 1.5rem;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+#bootstrap:hover::after {
+  content: "Bootstrap";
+  font-family: 'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+  font-size: 1.5rem;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+#react:hover::after {
+  content: "React.JS";
+  font-family: 'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+  font-size: 1.5rem;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+#php:hover::after {
+  content: "PHP";
+  font-family: 'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+  font-size: 1.5rem;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+#laravel:hover::after {
+  content: "Laravel";
+  font-family: 'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+  font-size: 1.5rem;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+#node:hover::after {
+  content: "Node.JS";
+  font-family: 'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+  font-size: 1.5rem;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+#rn:hover::after {
+  content: "React Native";
+  font-family: 'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+  font-size: 1.5rem;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+#android:hover::after {
+  content: "Android (Java)";
+  font-family: 'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+  font-size: 1.5rem;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+/*Fim transições icons -----------*/
 /*Breakpoints*/
-
 @media (min-width: 700px) {
-    .container {
-        max-width: 75%;
-        margin: 0 auto;
-    }
-
-    /*Header --------------------------*/
-    header {
-        position: sticky;
-        top: 0;
-    }
-
-    header #menu {
-        display: flex;
-        flex-direction: row;
+  .container {
+    max-width: 75%;
+    margin: 0 auto;
+  }
+  /*Header --------------------------*/
+  header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
+  header #menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
         justify-content: space-around;
-    }
-
-    header #menu nav ul {
-        display: flex;
-        justify-content: flex-end;
-        margin-right: 30px;
-    }
-    /*End Header -----------------------*/
-
-    /*About ----------------------------*/
-    section#about {
-        height: 400px;
-    }
-
-    section .content-about {
-        max-width: 60%;
-    }
-    /*End About -----------------------*/
-
-    /*Banner --------------------------*/
-    section.banner {
-        max-width: 900px;
-        flex-direction: row;
-    }
-
-    section.banner .img-banner {
-        width: 100%;
-        display: flex;
-        justify-content: flex-end;
-        margin-right: 10px;
-    }
-
-    section.banner .img-banner img {
-        width: 60%;
-    }
-
-    section.banner .img-banner img:hover {
-        width: 80%;
-    }
-    
-    section.banner .text-banner {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-    }
-    
-    section.banner .text-banner h1 {
-        font-size: 4rem;
-    }
-    
-    section.banner .text-banner h1:hover {
-        font-size: 4.3rem;
-    }
-    
-    section.banner .text-banner h3 {
-        font-size: 1.4rem;
-    }
-
-    section.banner .text-banner h3:hover {
-        font-size: 1.7rem;
-    }
-
-    /*End Banner -----------------------*/
-
-    /*Portfolio ------------------------*/
-    section.portfolio article.projetos .projeto {
-        margin: 0px 10px;
-        height: 60vh;
-        width: 40%; /*400px*/
-        max-width: 400px;
-    }
-
-    section.portfolio .projetos .projeto a:hover {
-        width: 100%;
-        height: 100%;
-    
-        -webkit-transition: all 1s;
-        transition: all 1s;
-    }
-
-    /*Modal portfólio*/
-    .box {
-        width: 90%;
-        max-width: 850px;
-    }
-
-    .box .box-content img {
-        max-width: 800px;
-        height: 80%;
-    }
-
-    .box .box-content p {
-        width: 80%;
-        max-width: 750px;
-        margin: 0 50px;
-    }
-
-    /*End Portfolio -----------------------*/
-
-    /*Skills ------------------------------*/
-    
-    section .skills-content .skills-tecnologies .tec {
-        align-items: center;
-        justify-content: center;
-        width: 95%;
-        height: 350px;
-    }
-    
-    section .skills-content .skills-tecnologies .tec .tec-text h1 {
-        font-size: 2rem;
-    }
-    
-    section .skills-content .skills-tecnologies .tec .tec-text h1 i {
-        font-size: 1.8rem;
-    }
-    
-    section .skills-content .skills-tecnologies .tec .tec-text hr {
-        width: 120px;
-    }
-    
-    section .skills-content .skills-tecnologies .tec .tec-icons {
-        height: 100px;
-        width: 65%;
-    }
-    
-    section .skills-content .skills-tecnologies .tec .tec-icons i {
-        font-size: 6rem;
-    }
-    
-    section .skills-content .skills-tecnologies .tec .tec-icons i:hover {
-        font-size: 6.5rem;
-    }
-
-    /*End Skills ---------------------------*/
-
-
-    /*Contato ------------------------------*/
-    section .contato-content .contato-sociais ul {
-        justify-content: center;
-        height: 150px;
-    }
-
-    section .contato-content .contato-sociais ul li {
-        font-size: 4.5rem;
-        margin: 20px 40px;
-    }
-
-    section .contato-content .contato-sociais ul li a:hover,
-    section .contato-content .contato-sociais ul li #email:hover {
+  }
+  header #menu nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin-right: 30px;
+  }
+  /*End Header -----------------------*/
+  /*About ----------------------------*/
+  section#about {
+    height: 400px;
+  }
+  section .content-about {
+    max-width: 60%;
+  }
+  /*End About -----------------------*/
+  /*Banner --------------------------*/
+  section.banner {
+    max-width: 900px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  section.banner .img-banner {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin-right: 10px;
+  }
+  section.banner .img-banner img {
+    width: 60%;
+  }
+  section.banner .img-banner img:hover {
+    width: 80%;
+  }
+  section.banner .text-banner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  section.banner .text-banner h1 {
+    font-size: 4rem;
+  }
+  section.banner .text-banner h1:hover {
+    font-size: 4.3rem;
+  }
+  section.banner .text-banner h3 {
+    font-size: 1.4rem;
+  }
+  section.banner .text-banner h3:hover {
+    font-size: 1.7rem;
+  }
+  /*End Banner -----------------------*/
+  /*Portfolio ------------------------*/
+  section.portfolio article.projetos .projeto {
+    margin: 0px 10px;
+    height: 60vh;
+    width: 40%;
+    /*400px*/
+    max-width: 400px;
+  }
+  section.portfolio .projetos .projeto a:hover {
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+  }
+  /*Modal portfólio*/
+  .box {
+    width: 90%;
+    max-width: 850px;
+  }
+  .box .box-content img {
+    max-width: 800px;
+    height: 80%;
+  }
+  .box .box-content p {
+    width: 80%;
+    max-width: 750px;
+    margin: 0 50px;
+  }
+  /*End Portfolio -----------------------*/
+  /*Skills ------------------------------*/
+  section .skills-content .skills-tecnologies .tec {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 95%;
+    height: 350px;
+  }
+  section .skills-content .skills-tecnologies .tec .tec-text h1 {
+    font-size: 2rem;
+  }
+  section .skills-content .skills-tecnologies .tec .tec-text h1 i {
+    font-size: 1.8rem;
+  }
+  section .skills-content .skills-tecnologies .tec .tec-text hr {
+    width: 120px;
+  }
+  section .skills-content .skills-tecnologies .tec .tec-icons {
+    height: 100px;
+    width: 65%;
+  }
+  section .skills-content .skills-tecnologies .tec .tec-icons i {
+    font-size: 6rem;
+  }
+  section .skills-content .skills-tecnologies .tec .tec-icons i:hover {
+    font-size: 6.5rem;
+  }
+  /*End Skills ---------------------------*/
+  /*Contato ------------------------------*/
+  section .contato-content .contato-sociais ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 150px;
+  }
+  section .contato-content .contato-sociais ul li {
+    font-size: 4.5rem;
+    margin: 20px 40px;
+  }
+  section .contato-content .contato-sociais ul li a:hover,
+  section .contato-content .contato-sociais ul li #email:hover {
     font-size: 5rem;
+  }
+  /*End Contato ---------------------------*/
 }
-    /*End Contato ---------------------------*/
-}
+/*# sourceMappingURL=style.css.map */

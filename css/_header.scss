@@ -1,0 +1,56 @@
+/*Header --------------------------------------*/
+header {
+    width: 100%;
+    margin: 0 auto;
+    background-color: $bg;
+    border-bottom: 1px solid $bg-transparent;
+
+    #menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        
+        .logo a {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+
+            img {
+                width: 48px;
+                height: 48px;
+            }
+
+            h1 {
+                color: $text-primary;
+                margin-left: 5px;
+                font-size: 1.2rem;
+                width: 120px;
+            }
+        }
+    }
+
+    nav {
+        width: 100%;
+
+        ul {
+            display: flex;
+            justify-content: center;
+
+            li {
+                margin: 10px;
+
+                a {
+                    color: $text-secondary;
+                    font-size: 18px;
+
+                    &:hover {
+                        color: $text-secondary-two;
+                    }
+                }
+            }
+        }
+    }
+}

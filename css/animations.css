@@ -55,23 +55,11 @@
     /*animation-fill-mode: backwards;*/
 }
 
-.banner-title {
-    animation-delay: 0.5s;
-}
-
-.banner-text {
-    animation-delay: 0.6s;
-}
-
-.banner-link {
-    animation-delay: 0.7s;
-}
-
 /*About*/
-.about-text {
+/*.about-text {
     animation-delay: 0.5s;
 }
 
 .about-subtext {
     animation-delay: 0.6s;
-}
+}*/
