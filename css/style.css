@@ -638,7 +638,6 @@ section#about .content-about hr {
   position: absolute;
   -webkit-animation: boxAnimation .5s;
           animation: boxAnimation .5s;
-  border: 1px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
