@@ -54,3 +54,22 @@ header {
         }
     }
 }
+
+@media (min-width: 700px) {
+    header {
+        position: sticky;
+        top: 0;
+
+        #menu {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+
+            nav ul {
+                display: flex;
+                justify-content: flex-end;
+                margin-right: 30px;
+            }
+        }
+    }
+}

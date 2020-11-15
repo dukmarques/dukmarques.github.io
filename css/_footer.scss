@@ -9,13 +9,13 @@ footer {
     color: $text-primary;
     text-align: center;
     padding: 20px 0;
-}
 
-.footer-content p {
-    font-size: 0.9rem;
-}
+    p {
+        font-size: 0.9rem;
 
-.footer-content p i {
-    font-size: 25px;
-    color: $text-secondary-two;
+        i {
+            font-size: 25px;
+            color: $text-secondary-two;
+        }
+    }
 }

@@ -138,58 +138,163 @@
     color: rgb(79, 156, 230) !important;
     -webkit-transition: all 1s;
     transition: all 1s;
+
+    &:hover::after {
+        content: "CSS 3";
+        font-family: 'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+        font-size: 1.5rem;
+    }
 }
 
 #js:hover {
     color: rgb(238, 211, 28) !important;
     -webkit-transition: all 1s;
     transition: all 1s;
+
+    &:hover::after {
+        content: "Java Script";
+        font-family: 'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+        font-size: 1.5rem;
+    }
 }
 
 #bootstrap:hover {
     color: rgb(98, 59, 151) !important;
     -webkit-transition: all 1s;
     transition: all 1s;
+
+    &:hover::after {
+        content: "Bootstrap";
+        font-family: 'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+        font-size: 1.5rem;
+    }
 }
 
 #sass:hover {
     color: #c9598f !important;
     -webkit-transition: all 1s;
     transition: all 1s;
+
+    &:hover::after {
+        content: "Sass";
+        font-family: 'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+        font-size: 1.5rem;
+    }
 }
 
 #react:hover {
     color: rgb(86, 213, 250) !important;
     -webkit-transition: all 1s;
     transition: all 1s;
+
+    &:hover::after {
+        content: "React.JS";
+        font-family: 'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+        font-size: 1.5rem;
+    }
 }
 
 #php:hover {
     color: rgb(108, 112, 170) !important;
     -webkit-transition: all 1s;
     transition: all 1s;
+
+    &:hover::after {
+        content: "PHP";
+        font-family: 'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+        font-size: 1.5rem;
+    }
 }
 
 #laravel:hover {
     color: rgb(237, 51, 40) !important;
     -webkit-transition: all 1s;
     transition: all 1s;
+
+    &:hover::after {
+        content: "Laravel";
+        font-family: 'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+        font-size: 1.5rem;
+    }
 }
 
 #node:hover {
     color: rgb(86, 170, 63) !important;
     -webkit-transition: all 1s;
     transition: all 1s;
+
+    &:hover::after {
+        content: "Node.JS";
+        font-family: 'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+        font-size: 1.5rem;
+    }
 }
 
 #rn:hover {
     color: rgb(0, 211, 253) !important;
     -webkit-transition: all 1s;
     transition: all 1s;
+
+    &:hover::after {
+        content: "React Native";
+        font-family: 'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+        font-size: 1.5rem;
+    }
 }
 
 #android:hover {
     color: rgb(41, 218, 122) !important;
     -webkit-transition: all 1s;
     transition: all 1s;
+
+    &:hover::after {
+        content: "Android (Java)";
+        font-family: 'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+        font-size: 1.5rem;
+    }
+}
+
+/*Transições com after para os icons ---------------*/
+
+#html:hover::after {
+    content: "HTML 5";
+    font-family: 'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+    font-size: 1.5rem;
+
+    -webkit-transition: all 1s;
+    transition: all 1s;
+}
+
+@media (min-width: 700px) {
+    .skills-content .skills-tecnologies .tec {
+        align-items: center;
+        justify-content: center;
+        width: 95%;
+        height: 350px;
+
+        .tec-text h1 {
+            font-size: 2rem;
+
+            i {
+                font-size: 1.8rem;
+            }
+        }
+
+        .tec-text hr {
+            width: 120px;
+        }
+
+        .tec-icons {
+            height: 100px;
+            width: 65%;
+
+            i {
+                font-size: 6rem;
+                
+                &:hover {
+                    font-size: 6.5rem;
+                }
+            }
+        }
+    }
 }

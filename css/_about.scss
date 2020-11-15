@@ -52,3 +52,13 @@ section#about {
         }
     }
 }
+
+@media (min-width: 700px) {
+    #about {
+        height: 400px;
+    }
+
+    .content-about {
+        max-width: 60%;
+    }
+}

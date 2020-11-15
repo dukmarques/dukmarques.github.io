@@ -93,3 +93,20 @@
     flex-direction: column;
     font-size: 1rem;
 }
+
+@media (min-width: 700px) {
+    .contato-content .contato-sociais ul {
+        justify-content: center;
+        height: 150px;
+
+        li {
+            font-size: 4.5rem;
+            margin: 20px 40px;
+
+            a:hover,
+            #email:hover {
+                font-size: 5rem;
+            }
+        }
+    }
+}
