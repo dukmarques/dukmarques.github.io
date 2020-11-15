@@ -6,7 +6,8 @@ $text-secondary: #64FA9B;
 $text-secondary-two: #5FE36A;
 
 @mixin titles-sections {
-    background: linear-gradient(90deg, #00F260, #0575E6);
+    //background: linear-gradient(90deg, #00F260, #0575E6);
+    background: linear-gradient(90deg, $text-secondary, $text-secondary-two);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -37,6 +38,10 @@ li {
 a {
     text-decoration: none;
     cursor: pointer;
+}
+
+input, button {
+    font-family: 'Lato', sans-serif;
 }
 
 .hidden {
