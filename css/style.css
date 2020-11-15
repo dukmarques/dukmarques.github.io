@@ -636,6 +636,9 @@ section#about .content-about hr {
   height: 80%;
   margin: 15px;
   position: absolute;
+  -webkit-animation: boxAnimation .5s;
+          animation: boxAnimation .5s;
+  border: 1px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -728,9 +731,9 @@ section#about .content-about hr {
 .box .close {
   color: #5FE36A;
   font-size: 2.3rem;
-  position: fixed;
-  top: 10px;
-  right: 20px;
+  position: absolute;
+  top: 3px;
+  right: 10px;
 }
 
 @media (min-width: 700px) {
@@ -759,6 +762,28 @@ section#about .content-about hr {
     width: 80%;
     max-width: 750px;
     margin: 0 50px;
+  }
+}
+
+@-webkit-keyframes boxAnimation {
+  from {
+    top: -500px;
+    opacity: 0;
+  }
+  to {
+    top: 70px;
+    opacity: 1;
+  }
+}
+
+@keyframes boxAnimation {
+  from {
+    top: -500px;
+    opacity: 0;
+  }
+  to {
+    top: 70px;
+    opacity: 1;
   }
 }
 

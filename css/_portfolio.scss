@@ -121,7 +121,11 @@
     width: 90%;
     height: 80%;
     margin: 15px;
+
     position: absolute;
+    animation: boxAnimation .5s;
+
+    border: 1px solid red;
 
     display: flex;
     flex-direction: column;
@@ -187,9 +191,9 @@
     .close {
         color: #5FE36A;
         font-size: 2.3rem;
-        position: fixed;
-        top: 10px;
-        right: 20px;
+        position: absolute;
+        top: 3px;
+        right: 10px;
     }
 }
 
@@ -222,5 +226,17 @@
                 margin: 0 50px;
             }
         }
+    }
+}
+
+@keyframes boxAnimation {
+    from {
+        top: -500px;
+        opacity: 0;
+    }
+
+    to {
+        top: 70px;
+        opacity: 1;
     }
 }
