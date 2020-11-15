@@ -54,7 +54,7 @@
             
                 color: $text-primary;
 
-                a, #email {
+                a {
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
@@ -69,29 +69,29 @@
                     -webkit-transition: all 1s;
                     transition: all 1s;
 
-                    a:hover, #email:hover {
-                        font-size: 3.2rem;
+                    &:hover {
+                        font-size: 3.5rem;
                     }
+                }
+
+                p {
+                    font-size: 1rem;
                 }
             }
         }
     }
 }
 
-#git:hover::after {
-    display: flex;
-    flex-direction: column;
-    content: "/dukmarques";
-    font-size: 1rem;
+#whatsapp:hover {
+    color: rgb(7, 226, 107);
 }
 
-#email:hover::after {
-    content: "eduardomarques@outlook";
-    display: flex;
-    font-size: 2rem;
-    font-weight: 100;
-    flex-direction: column;
-    font-size: 1rem;
+#email:hover {
+    color: rgb(77, 162, 202);
+}
+
+#git:hover {
+    color: rgb(238, 71, 45);
 }
 
 @media (min-width: 700px) {
@@ -103,8 +103,7 @@
             font-size: 4.5rem;
             margin: 20px 40px;
 
-            a:hover,
-            #email:hover {
+            a:hover {
                 font-size: 5rem;
             }
         }

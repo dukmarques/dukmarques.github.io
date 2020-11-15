@@ -946,6 +946,10 @@ section#about .content-about hr {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -958,8 +962,8 @@ section#about .content-about hr {
   height: 100%;
 }
 
-#skills .skills-content .skills-tecnologies .tec .tec-icons i {
-  font-size: 4rem;
+#skills .skills-content .skills-tecnologies .tec .tec-icons .icons i {
+  font-size: 3rem;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -972,139 +976,56 @@ section#about .content-about hr {
   transition: all 1s;
 }
 
-#skills .skills-content .skills-tecnologies .tec .tec-icons i:hover {
+#skills .skills-content .skills-tecnologies .tec .tec-icons .icons i:hover {
   font-size: 5rem;
   color: #BD5D38;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+#skills .skills-content .skills-tecnologies .tec .tec-icons .icons p {
+  font-size: .9rem;
 }
 
 /*Alterando as cores dos icones de skills*/
 #css:hover {
   color: #4f9ce6 !important;
-  -webkit-transition: all 1s;
-  transition: all 1s;
-}
-
-#css:hover:hover::after {
-  content: "CSS 3";
-  font-family: 'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
-  font-size: 1.5rem;
 }
 
 #js:hover {
   color: #eed31c !important;
-  -webkit-transition: all 1s;
-  transition: all 1s;
-}
-
-#js:hover:hover::after {
-  content: "Java Script";
-  font-family: 'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
-  font-size: 1.5rem;
 }
 
 #bootstrap:hover {
   color: #623b97 !important;
-  -webkit-transition: all 1s;
-  transition: all 1s;
-}
-
-#bootstrap:hover:hover::after {
-  content: "Bootstrap";
-  font-family: 'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
-  font-size: 1.5rem;
 }
 
 #sass:hover {
   color: #c9598f !important;
-  -webkit-transition: all 1s;
-  transition: all 1s;
-}
-
-#sass:hover:hover::after {
-  content: "Sass";
-  font-family: 'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
-  font-size: 1.5rem;
 }
 
 #react:hover {
   color: #56d5fa !important;
-  -webkit-transition: all 1s;
-  transition: all 1s;
-}
-
-#react:hover:hover::after {
-  content: "React.JS";
-  font-family: 'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
-  font-size: 1.5rem;
 }
 
 #php:hover {
   color: #6c70aa !important;
-  -webkit-transition: all 1s;
-  transition: all 1s;
-}
-
-#php:hover:hover::after {
-  content: "PHP";
-  font-family: 'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
-  font-size: 1.5rem;
 }
 
 #laravel:hover {
   color: #ed3328 !important;
-  -webkit-transition: all 1s;
-  transition: all 1s;
-}
-
-#laravel:hover:hover::after {
-  content: "Laravel";
-  font-family: 'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
-  font-size: 1.5rem;
 }
 
 #node:hover {
   color: #56aa3f !important;
-  -webkit-transition: all 1s;
-  transition: all 1s;
-}
-
-#node:hover:hover::after {
-  content: "Node.JS";
-  font-family: 'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
-  font-size: 1.5rem;
 }
 
 #rn:hover {
   color: #00d3fd !important;
-  -webkit-transition: all 1s;
-  transition: all 1s;
-}
-
-#rn:hover:hover::after {
-  content: "React Native";
-  font-family: 'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
-  font-size: 1.5rem;
 }
 
 #android:hover {
   color: #29da7a !important;
-  -webkit-transition: all 1s;
-  transition: all 1s;
-}
-
-#android:hover:hover::after {
-  content: "Android (Java)";
-  font-family: 'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
-  font-size: 1.5rem;
-}
-
-/*Transições com after para os icons ---------------*/
-#html:hover::after {
-  content: "HTML 5";
-  font-family: 'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
-  font-size: 1.5rem;
-  -webkit-transition: all 1s;
-  transition: all 1s;
 }
 
 @media (min-width: 700px) {
@@ -1115,6 +1036,7 @@ section#about .content-about hr {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    max-width: 1100px;
     width: 95%;
     height: 350px;
   }
@@ -1132,10 +1054,10 @@ section#about .content-about hr {
     width: 65%;
   }
   .skills-content .skills-tecnologies .tec .tec-icons i {
-    font-size: 6rem;
+    font-size: 6rem !important;
   }
   .skills-content .skills-tecnologies .tec .tec-icons i:hover {
-    font-size: 6.5rem;
+    font-size: 7rem !important;
   }
 }
 
@@ -1226,7 +1148,7 @@ section#about .content-about hr {
   color: #FFF;
 }
 
-.contato-content .contato-sociais ul li a, .contato-content .contato-sociais ul li #email {
+.contato-content .contato-sociais ul li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1248,34 +1170,24 @@ section#about .content-about hr {
   transition: all 1s;
 }
 
-.contato-content .contato-sociais ul li a a:hover, .contato-content .contato-sociais ul li a #email:hover, .contato-content .contato-sociais ul li #email a:hover, .contato-content .contato-sociais ul li #email #email:hover {
-  font-size: 3.2rem;
+.contato-content .contato-sociais ul li a:hover {
+  font-size: 3.5rem;
 }
 
-#git:hover::after {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  content: "/dukmarques";
+.contato-content .contato-sociais ul li p {
   font-size: 1rem;
 }
 
-#email:hover::after {
-  content: "eduardomarques@outlook";
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 2rem;
-  font-weight: 100;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  font-size: 1rem;
+#whatsapp:hover {
+  color: #07e26b;
+}
+
+#email:hover {
+  color: #4da2ca;
+}
+
+#git:hover {
+  color: #ee472d;
 }
 
 @media (min-width: 700px) {
@@ -1289,14 +1201,14 @@ section#about .content-about hr {
     font-size: 4.5rem;
     margin: 20px 40px;
   }
-  .contato-content .contato-sociais ul li a:hover,
-  .contato-content .contato-sociais ul li #email:hover {
+  .contato-content .contato-sociais ul li a:hover {
     font-size: 5rem;
   }
 }
 
 /*Footer --------------------------------------*/
 footer {
+  background: #000;
   border-top: 1px solid rgba(123, 131, 139, 0.5);
   width: 100%;
 }
