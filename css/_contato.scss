@@ -57,7 +57,7 @@
                 a {
                     display: flex;
                     flex-direction: column;
-                    justify-content: center;
+                    justify-content: space-around;
                     align-items: center;
 
                     color: $text-primary;
@@ -72,10 +72,10 @@
                     &:hover {
                         font-size: 3.5rem;
                     }
-                }
 
-                p {
-                    font-size: 1rem;
+                    p {
+                        font-size: 1rem;
+                    }
                 }
             }
         }

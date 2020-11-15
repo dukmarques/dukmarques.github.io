@@ -1156,9 +1156,8 @@ section#about .content-about hr {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1174,7 +1173,7 @@ section#about .content-about hr {
   font-size: 3.5rem;
 }
 
-.contato-content .contato-sociais ul li p {
+.contato-content .contato-sociais ul li a p {
   font-size: 1rem;
 }
 
