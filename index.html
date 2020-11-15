@@ -26,15 +26,19 @@
                         <img src="img/logo.png" alt="">
                         <h1>&lt;Eduardo /&gt;</h1>
                     </a>
+
+                    <div class="button-menu">
+                        <i class="fa fa-bars" onclick="showMenu()"></i>
+                    </div>
                 </div>
     
                 <nav>
                     <ul>
-                        <li class="animate-right-left"><a href="#home">Home</a></li>
-                        <li class="animate-right-left menu-delay1"><a href="#about">Sobre</a></li>
-                        <li class="animate-right-left menu-delay2"><a href="#portfolio">Portfólio</a></li>
-                        <li class="animate-right-left menu-delay3"><a href="#skills">Skills</a></li>
-                        <li class="animate-right-left menu-delay4"><a href="#contato">Contato</a></li>
+                        <li class="animate-right-left"><a href="#home" onclick="showMenu()" >Home</a></li>
+                        <li class="animate-right-left menu-delay1"><a href="#about" onclick="showMenu()" >Sobre</a></li>
+                        <li class="animate-right-left menu-delay2"><a href="#portfolio" onclick="showMenu()" >Portfólio</a></li>
+                        <li class="animate-right-left menu-delay3"><a href="#skills" onclick="showMenu()" >Skills</a></li>
+                        <li class="animate-right-left menu-delay4"><a href="#contato" onclick="showMenu()" >Contato</a></li>
                     </ul>
                 </nav>
             </div>
@@ -54,13 +58,13 @@
     
         <section id="about">
             <div class="content-about container">
-                <h1 class="animate-up">Sobre mim</h1>
+                <h1 class="">Sobre mim</h1>
                 <hr>
-                <h3 class="animate-up about-text">Me chamo Eduardo Marques,
+                <h3 class="about-text">Me chamo Eduardo Marques,
                     sou estudante de Engenharia de Computação 
                     na Universidade Estadual de Feira de Santana - UEFS (Bahia).
                 </h3>
-                <p class="animate-up about-subtext">
+                <p class="about-subtext">
                     Desde novo sempre gostei de tecnologia e vídeo games, ao concluir o ensino médio, decidi ter 
                     como caminhada o mundo da programação. Vejo a programação como uma ferramenta que nos 
                     possibilita desenvolver novas experiências, alcançar objetivos sociais e pessoais, 
@@ -80,7 +84,7 @@
             <article class="projetos">
                 
                 <div class="projeto">
-                    <a href="#modal-luau">
+                    <a onclick="openModal('modal-luau')">
                         <img src="img/nosso-luau.png" alt="">
                         <div class="text-projeto">
                             <h1>Agência Nosso Luau</h1>
@@ -106,14 +110,14 @@
                                 <a href="https://dukmarques.github.io/site-nosso-luau/" target="_blank">Visite o site</a>
                             </div>
                         </div>
-                        <a href="#projetos" class="close" id="close">
+                        <a class="close" id="close" onclick="closeModal('modal-luau')">
                             <i class="fas fa-times"></i>
                         </a>
                     </div>
                 </div>
 
                 <div class="projeto">
-                    <a href="#modal-weparking">
+                    <a onclick="openModal('modal-weparking')">
                         <img src="img/weparking.png" alt="">
                         <div class="text-projeto">
                             <h1>WeParking</h1>
@@ -142,14 +146,14 @@
                                 <a href="https://dukmarques.github.io/WeParking-Site/" target="_blank">Visite o site</a>
                             </div>
                         </div>
-                        <a href="#projetos" class="close" id="close">
+                        <a class="close" id="close" onclick="closeModal('modal-weparking')" >
                             <i class="fas fa-times"></i>
                         </a>
                     </div>
                 </div>
 
                 <div class="projeto">
-                    <a href="#modal-parallax">
+                    <a onclick="openModal('modal-parallax')">
                         <img src="img/parallax.png" alt="">
                         <div class="text-projeto">
                             <h1>Parallax Template</h1>
@@ -179,14 +183,14 @@
                                 <a class="git" href="https://github.com/dukmarques/parallax" target="_blank">Repositório do Projeto</a>
                             </div>
                         </div>
-                        <a href="#projetos" class="close" id="close">
+                        <a class="close" id="close" onclick="closeModal('modal-parallax')" >
                             <i class="fas fa-times"></i>
                         </a>
                     </div>
                 </div>
 
                 <div class="projeto">
-                    <a href="#modal-ecommerce">
+                    <a onclick="openModal('modal-ecommerce')">
                         <img src="img/ecommerce.png" alt="">
                         <div class="text-projeto">
                             <h1>E-commerce Shop Template</h1>
@@ -213,7 +217,7 @@
                                 <a class="git" href="https://github.com/dukmarques/Ecommerce-Shop-Template" target="_blank">Repositório do Projeto</a>
                             </div>
                         </div>
-                        <a href="#projetos" class="close" id="close">
+                        <a class="close" id="close" onclick="closeModal('modal-ecommerce')" >
                             <i class="fas fa-times"></i>
                         </a>
                     </div>
@@ -334,5 +338,7 @@
         </footer>
 
     </div>
+
+    <script src="js/script.js"></script>
 </body>
 </html>

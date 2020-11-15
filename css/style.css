@@ -49,9 +49,15 @@ header {
   margin: 0 auto;
   background-color: #24252F;
   border-bottom: 1px solid rgba(123, 131, 139, 0.5);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 10;
 }
 
 header #menu {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -62,9 +68,21 @@ header #menu {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header #menu .logo {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 header #menu .logo a {
@@ -93,57 +111,109 @@ header #menu .logo a h1 {
   width: 120px;
 }
 
-header nav {
+header #menu .logo .button-menu {
   width: 100%;
-}
-
-header nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 50px;
 }
 
-header nav ul li {
-  margin: 10px;
-}
-
-header nav ul li a {
+header #menu .logo .button-menu i {
+  cursor: pointer;
   color: #64FA9B;
-  font-size: 18px;
+  justify-self: flex-end;
+  font-size: 30px;
 }
 
-header nav ul li a:hover {
+header #menu .logo .button-menu i:hover {
   color: #5FE36A;
 }
 
+header #menu nav {
+  width: 100%;
+  background: rgba(95, 227, 106, 0.8);
+  position: absolute;
+  top: 60px;
+  border-radius: 0px 0px 15px 15px;
+}
+
+header #menu nav ul {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all;
+  transition: all;
+}
+
+header #menu nav ul li {
+  margin: 10px;
+}
+
+header #menu nav ul li a {
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+header #menu nav ul li a:hover {
+  border-bottom: 1px solid #24252F;
+}
+
 @media (min-width: 700px) {
-  header {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-  }
   header #menu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
+  header #menu .logo .button-menu {
+    display: none;
+  }
+  header #menu nav {
+    background: transparent;
+    position: relative;
+    top: 0;
+  }
   header #menu nav ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    width: 100%;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
     margin-right: 30px;
+  }
+  header #menu nav ul li a {
+    color: #64FA9B;
+    font-weight: normal;
+  }
+  header #menu nav ul li a:hover {
+    color: #5FE36A;
   }
 }
 
@@ -553,12 +623,6 @@ section#about .content-about hr {
   left: 0;
   background-color: rgba(0, 0, 0, 0.8);
   display: none;
-}
-
-.modal:target {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
